@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="../normalize.css">
+  <link rel="stylesheet" href="../main.css">
+  <body>
+    <style>
+      dialog {
+        width: 200px;
+        height: 200px;
+        background-color: #ccc;
+      }
+    </style>
+    <div>
+      <section>
+        <h4>Native modal dialog</h4>
+        <button onclick="document.getElementById('modal').showModal();">Click to open</button>
+        <dialog id="modal">
+          <section>
+            <h4>Dialog title</h4>
+            <p>This is body of native dialog!</p>
+            <button onclick="document.getElementById('modal').close();">Close</button>
+          </section>
+        </dialog>
+      </section>
+    </div>
+  </body>
+</html>

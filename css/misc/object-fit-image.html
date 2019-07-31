@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <style>
+      .image {
+        background: #34495e;
+        border: 1px solid #34495e;
+        width: 200px;
+        height: 200px;
+      }
+      .image-contain {
+        object-fit: contain;
+        object-position: center;
+      }
+      .image-cover {
+        object-fit: cover;
+        object-position: right top;
+      }
+    </style>
+    <div>
+      <img class="image image-contain" src="https://picsum.photos/600/200" />
+      <img class="image image-cover" src="https://picsum.photos/600/200" />
+    </div>
+  </body>
+</html>

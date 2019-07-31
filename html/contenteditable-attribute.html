@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="../../normalize.css">
+  <link rel="stylesheet" href="../../main.css">
+  <body>
+    <style>
+    </style>
+    <div>
+      <section>
+        <h4>Contenteditable attribute</h4>
+        <p id="content" contenteditable="true">Just try to edit this text and add it using button.</p>
+        <button id="add">add</button>
+        <div id="content-list"></div>
+      </section>
+    </div>
+    <script>
+      document.getElementById('add').addEventListener('click', function () {
+        let newelement = document.createElement('div');
+
+        newelement.innerText = document.getElementById('content').innerText;
+        document.getElementById('content-list').appendChild(newelement);
+      })
+    </script>
+  </body>
+</html>

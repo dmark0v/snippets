@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="../normalize.css">
+  <link rel="stylesheet" href="../main.css">
+  <body>
+    <style>
+      input[type="image"] {
+        padding: 10px 0;
+      }
+    </style>
+    <div>
+      <section>
+        <h4>Output element</h4>
+        <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+          <input type="number" name="b" value="50" /> +
+          <input type="number" name="a" value="10" /> =
+          <output name="result">60</output>
+        </form>
+      </section>
+      <section>
+        <h4>Date elements</h4>
+        <form>
+          <p>
+            <label>Datetime:</label>
+            <input type="datetime-local" name="datetime" value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00">
+          </p>
+          <p>
+            <label>Date:</label>
+            <input type="date" name="date" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+          </p>
+        </form>
+      </section>
+      <section>
+        <h4>Image button</h4>
+        <form>
+          <div>
+            <input type="text" name="username" value="Some Name">
+          </div>
+          <div>
+            <input type="image" alt="Login" src="https://picsum.photos/192/40" value="Submit"/>
+          </div>
+        </form>
+      </section>
+      <section>
+        <h4>Reset button</h4>
+        <form>
+          <div>
+            <input type="text" name="username">
+          </div>
+          <div>
+            <input type="password" name="password">
+          </div>
+          <div>
+            <input type="reset" value="Reset"/>
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

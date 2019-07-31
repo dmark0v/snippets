@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="../normalize.css">
+  <link rel="stylesheet" href="../main.css">
+  <body>
+    <style>
+      input:invalid {
+        border: 1px solid red;
+      }
+
+      input:valid {
+        border: 1px solid green;
+      }
+
+    </style>
+    <div>
+      <ul>
+        <li>
+          <section>
+            <h4>Require attribute</h4>
+            <p>Input shouldn't be empty.</p>
+            <form>
+              <input type="text" name="name" placeholder="sometext" required >
+              <button>Submit</button>
+            </form>
+          </section>
+          <section>
+            <h4>Regular expression</h4>
+            <p>Input should match email regexp: </p>
+            <code>a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}</code>
+            <form>
+              <input type="text" name="email" placeholder="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}" required>
+              <button>Submit</button>
+            </form>
+          </section>
+          <section>
+            <h4>Constraining the length</h4>
+            <p>Input should be more than 4 and less than 10 symbols.</p>
+            <form>
+              <input type="text" name="name" placeholder="sometext" minlength="4" maxlength="10">
+              <button>Submit</button>
+            </form>
+          </section>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
